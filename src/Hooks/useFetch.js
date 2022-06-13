@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const useFetch = (url) => {
+const useFetch = (url, func) => {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
@@ -10,7 +10,8 @@ const useFetch = (url) => {
     axios
       .get(url)
       .then((response) => {
-        setData(response);
+        let finalData = func(response);
+        setData(finalData);
         setIsPending(false);
         setError(null);
       })
