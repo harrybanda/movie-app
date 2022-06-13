@@ -34,3 +34,9 @@ To Start Server:
 To Visit App:
 
 `localhost:3000`
+
+## Wireframe
+
+Below is a link to the initial wireframe I did before building the app:
+
+https://www.figma.com/file/RSjEMODwnKJXaXDer8DV3B/Movies-app?node-id=0%3A1
